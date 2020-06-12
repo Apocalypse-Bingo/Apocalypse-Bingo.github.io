@@ -8,13 +8,21 @@
   </head>
 
 <!--  <frameset cols="50%,50%"> -->
-  <frameset rows="10%,45%,45%">
+  <frameset rows="10%,90%">
 <!-- doesn`t work in FF 68: displays an explanation    <frame src="https://duckduckgo.com/?q=Apocalypse+Bingo&ia=images&iax=images"/> -->
     <frame src="header_frame.html"/>
-    <frame src="https://www.bing.com/images/search?q=Apocalypse+Bingo"/>
-    <frame src="https://www.bing.com/images/search?q=%22Apocalypse+Bingo%22"/>
+    <frameset cols="50%,50%">
+      <frame src="https://www.bing.com/images/search?q=Apocalypse+Bingo"/>
+      <frame src="https://www.bing.com/images/search?q=%22Apocalypse+Bingo%22"/>
 <!-- doesn`t work in FF 68: displays nothing, i.e. just a white frame     <frame src="https://www.google.com/search?q=Apocalypse+Bingo&tbm=isch"/> -->
 <!--    <frame src="http://www.stealmylogin.com/"/> -->
+      <noframes>
+        <body>
+          Please enable HTML 4.0 frames.
+        </body>
+      </noframes>
+    </frameset>
+
     <noframes>
       <body>
         Please enable HTML 4.0 frames.
